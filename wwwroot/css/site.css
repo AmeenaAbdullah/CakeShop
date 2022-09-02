@@ -1,0 +1,705 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+
+body {
+    position: relative;
+}
+
+.orderOnline {
+    width: 200px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 5px;
+    align-content: center;
+    padding-bottom: 5px;
+}
+
+.containerMain {
+    background-color: white;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    /*background-image:url("../images/Wp.png");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.errors {
+    color: red;
+}
+
+
+
+.row {
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    margin-left: 80px;
+}
+
+.Heading {
+    align-items: center;
+    margin: auto;
+    color: #B6555E;
+    margin: 60px 10px 10px 10px;
+    text-decoration: underline;
+    font-size: 2.5rem;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+/* Style the container/contact section */
+.container2 {
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 80%;
+    background-color: #f2f2f2;
+    height: 800px;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column2 {
+    float: left;
+    width: 50%;
+    margin-top: 140px;
+    padding: 20px;
+}
+
+input {
+    border-radius: 40px;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.btn-solid-lg {
+    display: inline-block;
+    padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+    border: 1px solid #652d90;
+    border-radius: 30px;
+    background-image: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 0;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+    .btn-solid-lg:hover {
+        background-color: transparent;
+        color: #652d90; /* needs to stay here because of the color property of a tag */
+        text-decoration: none;
+    }
+
+.btn-solid-lg {
+    display: inline-block;
+    padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+    border: 1px solid #652d90;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 0;
+    text-decoration: none;
+    transition: all 0.2s;
+    background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+}
+
+    .btn-solid-lg:hover {
+        background-color: transparent;
+        color: #652d90; /* needs to stay here because of the color property of a tag */
+        text-decoration: none;
+    }
+
+.items {
+    border-radius: 50px;
+    background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+}
+
+.card-body {
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: max-content;
+}
+/*login*/
+.form-control {
+    border-radius: 40px;
+}
+
+
+
+
+
+/****index  page admin***/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.4s;
+    position: fixed;
+    height: 100%;
+}
+
+    #sidebar.active {
+        margin-left: -250px;
+    }
+
+    #sidebar .sidebar-header {
+        padding: 20px;
+        background: #6d7fcc;
+    }
+
+    #sidebar ul.components {
+        padding: 20px 0;
+        border-bottom: 1px solid #47748b;
+    }
+
+    #sidebar ul p {
+        color: #fff;
+        padding: 10px;
+    }
+
+    #sidebar ul li a {
+        padding: 10px;
+        font-size: 1.1em;
+        display: block;
+    }
+
+        #sidebar ul li a:hover {
+            color: #7386D5;
+            background: #fff;
+        }
+
+    #sidebar ul li.active > a,
+    a[aria-expanded="true"] {
+        color: #fff;
+        background: #6d7fcc;
+    }
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: 250px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+
+
+/*------------------NAveBAr------------------*/
+@media (max-width: 1250px) {
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .login {
+        font-size: 12px;
+    }
+
+    .navHead {
+        font-size: 20px;
+    }
+}
+
+.navHead {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    margin-left: 10%;
+}
+
+.navbarr {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.mid_navbar {
+    font-weight: bold;
+    width: 40%;
+    margin: 0 auto;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    text-align: right;
+    align-items: end;
+}
+
+.login {
+    color: royalblue;
+    padding-left: 2%;
+}
+
+.mid_navbar li {
+    color: black;
+    margin-top: 3%;
+    padding-left: 5%;
+}
+
+.mid_navbar ul {
+    margin-left: 20%;
+}
+
+/***************************************************
+       Home Page
+
+***************************************************/
+
+.container1 {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 100px;
+}
+
+.img1 {
+    width: 100%;
+    height: 10%;
+}
+
+    .img1:hover {
+        opacity: 1;
+        box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    }
+
+
+a {
+    text-decoration: none;
+}
+
+.cont {
+    margin-top: 100px;
+}
+
+.frontpage {
+    font-family: "Pacifico";
+    font-size: 20px;
+    color: black;
+}
+
+.main-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: #B6555E;
+    text-decoration: underline;
+    margin-top: 40px;
+}
+
+.frontpage:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+/*******************************************
+
+    sign up
+
+***********************************************/
+.signIn {
+    margin-top: 100px;
+    color: #B6555E;
+}
+
+/*******************************************************************
+
+    admin layout
+
+********************************************************************/
+
+.main2 {
+    width: 100%;
+}
+.nav-item2 {
+    width: 30%;
+}
+
+.logout2 {
+    width: 10%;
+}
+
+.notify2 {
+    width: 5%;
+}
+
+.nav-item2:hover {
+    color: #6f42c1;
+}
+
+.logout2:hover {
+    color: #6f42c1;
+}
+
+.notify2:hover {
+    color: #6f42c1;
+}
+
+
+
+/***************************************************
+       ADD PRODUCT
+
+***************************************************/
+
+
+.form {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.Addrow {
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    background-color: #ddd6d6;
+    padding: 50px;
+}
+
+.AddProducthead {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.tm-product-img-dummy {
+    max-width: 100%;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #aaa;
+    cursor: pointer;
+}
+
+.tm-upload-icon {
+    background: #455c71;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 22px;
+}
+
+.fa-cloud-upload-alt:before {
+    content: "\f382";
+}
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.sidebar {
+    background-color: rgb(145 87 87 / 25%);
+}
+
+.nav-item {
+    color: black;
+    align-content: center;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.4s;
+    position: fixed;
+    height: 100%;
+}
+
+    #sidebar.active {
+        margin-left: -250px;
+    }
+
+    #sidebar .sidebar-header {
+        padding: 20px;
+        background: #6d7fcc;
+    }
+
+    #sidebar ul.components {
+        padding: 20px 0;
+        border-bottom: 1px solid #47748b;
+    }
+
+    #sidebar ul p {
+        color: #fff;
+        padding: 10px;
+    }
+
+    #sidebar ul li a {
+        padding: 10px;
+        font-size: 1.1em;
+        display: block;
+    }
+
+        #sidebar ul li a:hover {
+            color: #7386D5;
+            background: #fff;
+        }
+
+    #sidebar ul li.active > a,
+    a[aria-expanded="true"] {
+        color: #fff;
+        background: #6d7fcc;
+    }
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: 250px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/****index  page admin***/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/********************CARD************************/
+.card{
+    margin-top:30px;
+}
+.rowcard{
+    margin-top:10px;
+}
+.topcakes {
+    margin-top: 150px;
+}
+.homepagehead{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:black;
+    font-weight:bold;
+    margin:0 auto;
+    width:max-content;
+}
+#seemore {
+
+    margin-left:45%;
+    margin-top: 80px;
+    color: blue;
+    margin-bottom: 200px;
+}
+
+
+
+/**********************Product Detail **********************/
+.Main-content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 50px 40px;
+}
+.ProductItem-details{
+    margin-left:20px;
+
+}
+.ProductItem-summary{
+    display:flex;
+    width:80%;
+    margin:0 auto;
+    margin-top:100px;
+    height:max-content;
+    margin-bottom:80px;
+
+}
+
+.ProductItem-details .sqs-add-to-cart-button {
+    /* display: inline-block; */
+    display: block;
+    height: auto;
+    margin-top:1em;
+    padding: 1em 2.5em 1em;
+    color: #fff;
+    background-color: #272727;
+    border-width: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    line-height: 1em;
+    font-weight: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    border-color: #4d4d4d;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: none;
+    font-family: sofia-pro;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 10px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    line-height: normal;
+    opacity: 1;
+}
+.sqs-add-to-cart-button {
+    width: max-content;
+}

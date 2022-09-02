@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{ 
+    ViewData["TitleMain"] = "Contact Us";
+    ViewData["desc"] = "";
+}
+
+<br /><br /><br /><br />
+<partial name="MainHeading" />
+<div class="container2">
+ 
+  <div class="row2">
+    <div class="column2">
+    <img src="/images/talk.png" style="width:100%">
+    </div>
+    <div class="column2">
+      <form action="/action_page.php">
+        <label class="form-group" for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit" style=" width:20%; background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
+">
+      </form>
+    </div>
+  </div>
+</div>

@@ -725,3 +725,19 @@ a:focus {
 .Adminbtn:hover{
     background-color:aqua;
 }
+
+
+
+/************************Items (User)*************************/
+#SearchCakes{
+    border-radius:0;
+    width:auto;
+    margin-left:100px;
+}
+#SearchBy {
+    border-radius: 0;
+    width: auto;
+}
+#Searchbtn {
+    margin-left: 100px;
+}

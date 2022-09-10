@@ -8,7 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddMemoryCache();
+builder.Services.AddSession(o => o.IdleTimeout=TimeSpan.FromSeconds(10));
 builder.Services.AddSingleton<IUser, UserRepo>();
 builder.Services.AddSingleton<ICake, CakeRepo>();
 var app = builder.Build();
@@ -23,7 +24,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseSession();
 app.UseRouting();
 
 app.UseAuthorization();

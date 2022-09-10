@@ -62,9 +62,10 @@ namespace CakesShop.Models.Repositories
         public List<Cake> GetCakesByCategory(string c)
         {
             List<Cake> cakes = new List<Cake>();
+            c = c.ToLower();
             if (!String.IsNullOrEmpty(c))
             {
-                cakes = dbcontext.Cakes.Where(s => s.Category!.Contains(c)).ToList(); 
+                cakes = dbcontext.Cakes.Where(s => s.Category.ToLower().Contains(c)).ToList(); 
             }
             return cakes;
         }

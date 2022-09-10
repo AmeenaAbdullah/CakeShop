@@ -8,141 +8,141 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CakesShop
 build_property.RootNamespace = CakesShop
-build_property.ProjectDir = D:\se\semester6\EAD\New folder\CakesShop\
+build_property.ProjectDir = D:\se\semester6\EAD\New folder\CakeShop\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\se\semester6\EAD\New folder\CakesShop
+build_property.MSBuildProjectDirectory = D:\se\semester6\EAD\New folder\CakeShop
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Admin/Addimg.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Admin/Addimg.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkaW1nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Admin/AddProduct.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Admin/AddProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Admin/Index.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Admin/Product.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Admin/Product.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Admin/UpdateProduct.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Admin/UpdateProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXBkYXRlUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Admin/_AllCakes.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Admin/_AllCakes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX0FsbENha2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Cake/cakes.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Cake/cakes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FrZVxjYWtlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Cake/OrderCake.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Cake/OrderCake.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FrZVxPcmRlckNha2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Cake/PlaceHolder.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Cake/PlaceHolder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FrZVxQbGFjZUhvbGRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Cake/Search.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Cake/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FrZVxTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Cake/_getAllCakes.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Cake/_getAllCakes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FrZVxfZ2V0QWxsQ2FrZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Shared/addproduct.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Shared/addproduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXGFkZHByb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Shared/Components/Cakes/Default.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Shared/Components/Cakes/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FrZXNcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Shared/Components/Cakes/Default2.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Shared/Components/Cakes/Default2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FrZXNcRGVmYXVsdDIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Shared/Components/test/Default.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Shared/Components/test/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcdGVzdFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Shared/Error.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Shared/Products_admin.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Shared/Products_admin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFByb2R1Y3RzX2FkbWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Shared/viewdata.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Shared/viewdata.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXHZpZXdkYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Shared/_add.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Shared/_add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9hZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Shared/_adminLayout.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Shared/_adminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9hZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/User/BreakFast_Lunch.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/User/BreakFast_Lunch.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxCcmVha0Zhc3RfTHVuY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/User/Contact.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/User/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/User/Drink.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/User/Drink.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEcmluay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/User/Home.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/User/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/User/Items.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/User/Items.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJdGVtcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/User/Login.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/User/MainHeading.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/User/MainHeading.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxNYWluSGVhZGluZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/User/SeeMore.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/User/SeeMore.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTZWVNb3JlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/User/Signup.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/User/Signup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTaWdudXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/_ViewImports.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/_ViewStart.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/Shared/_Layout.cshtml]
+[D:/se/semester6/EAD/New folder/CakeShop/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-khkrxxk0xe

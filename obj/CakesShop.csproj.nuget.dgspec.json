@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\se\\semester6\\EAD\\New folder\\CakesShop\\CakesShop.csproj": {}
+    "D:\\se\\semester6\\EAD\\New folder\\CakeShop\\CakesShop.csproj": {}
   },
   "projects": {
-    "D:\\se\\semester6\\EAD\\New folder\\CakesShop\\CakesShop.csproj": {
+    "D:\\se\\semester6\\EAD\\New folder\\CakeShop\\CakesShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\se\\semester6\\EAD\\New folder\\CakesShop\\CakesShop.csproj",
+        "projectUniqueName": "D:\\se\\semester6\\EAD\\New folder\\CakeShop\\CakesShop.csproj",
         "projectName": "CakesShop",
-        "projectPath": "D:\\se\\semester6\\EAD\\New folder\\CakesShop\\CakesShop.csproj",
+        "projectPath": "D:\\se\\semester6\\EAD\\New folder\\CakeShop\\CakesShop.csproj",
         "packagesPath": "C:\\Users\\ameen\\.nuget\\packages\\",
-        "outputPath": "D:\\se\\semester6\\EAD\\New folder\\CakesShop\\obj\\",
+        "outputPath": "D:\\se\\semester6\\EAD\\New folder\\CakeShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ameen\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "Microsoft.AspNet.Mvc": {
               "target": "Package",
               "version": "[5.2.9, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",

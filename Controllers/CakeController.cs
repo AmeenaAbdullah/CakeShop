@@ -46,16 +46,24 @@ namespace CakesShop.Controllers
 
         [HttpPost]
 
-        public JsonResult GetSearchData(String customerName)
+        public JsonResult GetSearchData(String fullName)
         {
 
 
             List<Cake> cake = new List<Cake>();
 
             
-            cake = _cakeRepo.GetAllCakes();
+            cake = _cakeRepo.GetCakesByCategory(fullName);
             
             return Json(cake.ToList());
+        }
+        public IActionResult CakesViewComponent(String searcval)
+        {
+            List<Cake> cake = new List<Cake>();
+
+            cake = _cakeRepo.GetCakesByCategory(searcval);
+
+            return ViewComponent("Cakes", new { allitems = false ,view = searcval });
         }
     }
 }

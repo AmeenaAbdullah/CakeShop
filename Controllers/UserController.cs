@@ -53,8 +53,24 @@ namespace CakesShop.Controllers
         [HttpGet]
         public IActionResult Home()
         {
-
+            string data = String.Empty;
+            if (HttpContext.Session.Keys.Contains("first_request"))
+            {
+                string firsttime = HttpContext.Session.GetString("first_request");
+                data = "welcome back" + firsttime;
+            }
+            else
+            {
+                data = "You visit first time";
+                HttpContext.Session.SetString("first_request", System.DateTime.Now.ToString());
+            }
+            
             return View();
+        }
+        public IActionResult remove()
+        {
+            HttpContext.Session.Remove("first_request");
+            return View("Home");
         }
         [HttpGet]
         public IActionResult Items()

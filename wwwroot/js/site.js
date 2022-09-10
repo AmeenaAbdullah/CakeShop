@@ -10,17 +10,26 @@
         $("#seemore").attr('style', 'display:block');
     });
 
+     $("#Searchbtn").click(function () {
+         getCakesByValue();
+     });
+     $("#SearchCakes").keyup(function () {
+         console.log("doneeeeeeekeyup");
+         getCakesByValue();
+     });
 
      $("#txtCustomerName").keyup(function () {
          console.log("doneeeeeee");
-         var customerName = $.trim($("#txtCustomerName").val());
+         var fullName = $('#txtCustomerName').val();
+         var payload = { fullName: fullName }; // change name
          $.ajax({
              type: "POST",
              url: "/Cake/GetSearchData",
-             data: "{customerName:'" + customerName + "'}",
-             contentType: "application/json; charset=utf-8",
-             dataType: "json",
+             data: payload, //remove JSON.stringify
+             
              success: function (cakes) {
+                 alert('Successfully received Data ');
+                 console.log(cakes);
                  var table = $("#tblCustomers");
                  table.find("tr:not(:first)").remove();
                  $.each(cakes, function (i, cake) {
@@ -32,10 +41,44 @@
                      $(row).find("td").eq(1).html(cake.Price);
                      $(row).append("<td />");
                      $(row).find("td").eq(2).html(cake.Id);
+                    
                  });
+             }
+             ,
+             error: function () {
+                 alert('Failed to receive the Data');
+                 console.log('Failed ');
              }
          });
 
     });
 
-});
+ });
+
+//*********8Searching***********8
+function getCakesByValue() {
+    console.log("heloo search krooooo");
+    var searchby = $("#SearchBy").val();
+    var searcval = $("#SearchCakes").val();
+    var container = $("#Componentcontainer");
+    var payload = { searchby: searchby }; // change name
+    var payload2 = { searcval: searcval }; // change name
+    $.ajax({
+        type: "POST",
+        url: "/Cake/CakesViewComponent",
+        data: payload, //remove JSON.stringify
+        data: payload2,
+
+        success: function (cakes) {
+            alert('Successfully received Data ');
+            console.log(cakes);
+            container.html(cakes);
+
+        }
+        ,
+        error: function () {
+            alert('Failed to receive the Data');
+            console.log('Failed ');
+        }
+    }); 
+}

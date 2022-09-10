@@ -7,19 +7,18 @@
 
 }
 <script type="text/javascript">
-    function submit() {
-        console.log("hiiiiiiiiii");
+    function submitStudent() {
         var data = $("#userForm").serialize();
         console.log(data);
         alert(data);
         $.ajax({
             type: 'POST',
             url: '/User/Signup',
-            contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
-            // when we use .serialize()
-            // this generates the data in query string format.
-            // this needs the default contentType
-            // (default content type is: contentType: 'application/x-www-form-urlencoded; charset=UTF-8')
+            contentType: 'application/x-www-form-urlencoded; charset=UTF-8', 
+            // when we use .serialize() 
+            // this generates the data in query string format. 
+            // this needs the default contentType 
+            // (default content type is: contentType: 'application/x-www-form-urlencoded; charset=UTF-8') 
             // so it is optional, you can remove it
             data: data,
             success: function (result) {
@@ -44,7 +43,7 @@
             <div class="col-lg-6">
               <div class="card-body p-md-5 mx-md-4">
                  <img src="/./images/loginlogo.png" style="width: 285px;" alt="logo">/
-                     <form id="userForm"  asp-action="Signup" asp-controller="User" method="post">
+                     <form id="userForm" >
                     
                         <div class="form-outline mb-4">
                            <i class="fa fa-user"></i>   <label asp-for="Name" class="form-label" >Name</label>
@@ -70,7 +69,8 @@
 
                           </div>
                            <div class="text-center pt-1 mb-5 pb-1">
-            <button type="submit" class="btn" style="border-radius:40px; background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%); width:100%;">SignUp</button>  <br />
+               <button type="button" class="btn btn-primary" onclick="submitStudent()">Submit</button>
+             <br />
                            </div>
 
                             <div class="d-flex align-items-center justify-content-center pb-4">

@@ -45,16 +45,12 @@ namespace CakesShop.Controllers
                     ViewBag.Message = "file uploaded successfully";
                 }
 
-            Cake c1 = new Cake();
-            c1 = c;
+            //Cake c1 = new Cake();
+            //c1 = c;
             string imgpath = "/Uploads/" +postedFiles.FileName;
-            c1.Image = imgpath;
+            c.Image = imgpath;
 
-            if (ModelState.IsValid)
-            {
                 _cakeRepo.Add_cake(c);
-            }
-
                 return View();
         }
 

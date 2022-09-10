@@ -65,3 +65,10 @@ D:\se\semester6\EAD\New folder\CakesShop\obj\Debug\net6.0\refint\CakesShop.dll
 D:\se\semester6\EAD\New folder\CakesShop\obj\Debug\net6.0\CakesShop.pdb
 D:\se\semester6\EAD\New folder\CakesShop\obj\Debug\net6.0\CakesShop.genruntimeconfig.cache
 D:\se\semester6\EAD\New folder\CakesShop\obj\Debug\net6.0\ref\CakesShop.dll
+D:\se\semester6\EAD\New folder\CakesShop\bin\Debug\net6.0\System.Web.Mvc.dll
+D:\se\semester6\EAD\New folder\CakesShop\bin\Debug\net6.0\System.Web.Razor.dll
+D:\se\semester6\EAD\New folder\CakesShop\bin\Debug\net6.0\System.Web.Helpers.dll
+D:\se\semester6\EAD\New folder\CakesShop\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+D:\se\semester6\EAD\New folder\CakesShop\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+D:\se\semester6\EAD\New folder\CakesShop\bin\Debug\net6.0\System.Web.WebPages.dll
+D:\se\semester6\EAD\New folder\CakesShop\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll

@@ -35,6 +35,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXBkYXRlUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/se/semester6/EAD/New folder/CakesShop/Views/Admin/_AllCakes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX0FsbENha2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/se/semester6/EAD/New folder/CakesShop/Views/Cake/cakes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FrZVxjYWtlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -47,6 +51,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FrZVxQbGFjZUhvbGRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/se/semester6/EAD/New folder/CakesShop/Views/Cake/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FrZVxTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/se/semester6/EAD/New folder/CakesShop/Views/Cake/_getAllCakes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FrZVxfZ2V0QWxsQ2FrZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -57,6 +65,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/se/semester6/EAD/New folder/CakesShop/Views/Shared/Components/Cakes/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FrZXNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/se/semester6/EAD/New folder/CakesShop/Views/Shared/Components/Cakes/Default2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FrZXNcRGVmYXVsdDIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/se/semester6/EAD/New folder/CakesShop/Views/Shared/Components/test/Default.cshtml]
@@ -119,8 +131,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTZWVNb3JlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/se/semester6/EAD/New folder/CakesShop/Views/User/signup.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxzaWdudXAuY3NodG1s
+[D:/se/semester6/EAD/New folder/CakesShop/Views/User/Signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTaWdudXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/se/semester6/EAD/New folder/CakesShop/Views/_ViewImports.cshtml]

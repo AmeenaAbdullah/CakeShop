@@ -24,6 +24,10 @@ namespace CakesShop.Models.Repositories
 
 
         }
+       public bool UserExist(User user)
+        {
+            return dbcontext.Users.Any(u => u.Name == user.Name);
+        }
 
         
         //public User Get_user(int id)

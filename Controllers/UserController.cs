@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using CakesShop.Models.Interfaces;
 using System.Reflection.Metadata;
+using System;
 
 namespace CakesShop.Controllers
 {
@@ -15,27 +16,39 @@ namespace CakesShop.Controllers
             _userRepo = _user;
         }
         [HttpGet]
-        public IActionResult signup()
+        public IActionResult Signup()
         {
             return View();
         }
        
         [HttpPost]
-        public IActionResult signup(User u)
+        public IActionResult Signup( User u)
         {
-            if (ModelState.IsValid)
-            {
-                _userRepo.Add_User(u);
+            if (ModelState.IsValid) { 
+               
 
-               return this.Ok($"Form Data received!");
+            _userRepo.Add_User(u);
+
+               return View("Home");
             }
-            return BadRequest("Enter required fields");
+            return View();
         }
 
         [HttpGet]
         public IActionResult Login()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login(User u)
+        {
+            bool i= _userRepo.UserExist(u);
+            if (i)
+                return View("Home");
+            else
+                return View();
+
         }
         [HttpGet]
         public IActionResult Home()
@@ -74,5 +87,7 @@ namespace CakesShop.Controllers
             u.Password = "133";
             return PartialView("viewdata", u);
         }
+
+      
     }
 }

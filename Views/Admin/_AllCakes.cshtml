@@ -1,0 +1,49 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Cake
+<script type="text/javascript">
+    function DeleteCake() {
+        var Cake = 0;
+        Cake = $("#CakeId").val();
+       
+        console.log("hiii:" + Cake);
+        alert("HIII"+  @Model.Id);
+        $.ajax({
+            type: 'POST',
+            url: '/Cake/DeleteCake',
+           data: @Model.Id,
+            success: function (result) {
+                alert('Successfully received Data ');
+                console.log(result);
+            },
+            error: function () {
+                alert('Failed to receive the Data');
+                console.log('Failed ');
+            }
+        })
+    }
+
+</script>
+
+
+
+<form id="card">
+<div class="card" style="width: 18rem; height: 33rem">
+        <img asp-for="Image" src="@Model.Image" class="card-img-top" alt="..." width="310" height="300">
+    <div class="card-body" >
+            <p id="CakeId" style="display=none">@Model.Id</p>
+            <h5 asp-for="Category"  class="card-title">@Model.Category</h5>
+            <p asp-for="Detail" class="card-text">Content.</p>
+            <p asp-for="Price"  class="text-muted">Rs @Model.Price -/</p>
+
+            <p asp-for="Pond" class="text-muted">Rs @Model.Pond -/</p>
+        <a href="" class="btn Adminbtn" onclick="OrderNow">View Item</a>
+            <a href="" class="btn Adminbtn" id="btnDelete" onclick="DeleteCake()">Delete Item</a>
+        <a href="UpdateProduct.cshtml" class="btn Adminbtn"  onclick="OrderNow">Update Item</a>
+    </div>
+</div>
+</form>
+

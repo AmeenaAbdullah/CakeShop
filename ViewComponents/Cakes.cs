@@ -14,14 +14,18 @@ namespace CakesShop.ViewComponents
 
             _cakeRepo = _c;
         }
-        public IViewComponentResult Invoke(bool allitems)
+        public IViewComponentResult Invoke(bool allitems,string view)
         {
             List<Cake> c;
             if (allitems)
                  c = _cakeRepo.GetAllCakes();
             else
                 c = _cakeRepo.GetTopCakes();
+
+            if(view=="User")
             return View("Default", c);
+            else
+            return View("Default2", c);
         }
     }
 }

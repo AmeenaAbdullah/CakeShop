@@ -23,8 +23,7 @@ namespace CakesShop.Models.Repositories
       
         public  List<Cake> GetAllCakes()
         {
-            return dbcontext.Cakes
-                  .Select(cake => new Cake()
+            return dbcontext.Cakes.Select(cake => new Cake()
                   {
                       Category = cake.Category,
                       Description = cake.Description,
@@ -44,6 +43,30 @@ namespace CakesShop.Models.Repositories
                       Price = cake.Price,
                       Image = cake.Image,
                   }).Take(8).ToList();
+        }
+        public Boolean Delete(int id)
+        {
+            CakesShopManagementSystemContext dbcont = new CakesShopManagementSystemContext();
+            Cake c= dbcont.Cakes.Find(id);
+            if (c != null)
+            {
+                dbcontext.Cakes.Remove(c);
+                dbcontext.SaveChanges();
+                return true;
+            }
+        
+            return false;
+        }
+
+
+        public List<Cake> GetCakesByCategory(string c)
+        {
+            List<Cake> cakes = new List<Cake>();
+            if (!String.IsNullOrEmpty(c))
+            {
+                cakes = dbcontext.Cakes.Where(s => s.Category!.Contains(c)).ToList(); 
+            }
+            return cakes;
         }
 
     }

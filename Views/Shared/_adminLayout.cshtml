@@ -38,7 +38,8 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
            <li class="nav-item2 ">
              <a class="nav-link active" asp-controller="User" asp-action="Home">
-                    <i class="fa fa-stack-exchange icon" style="font-size:30px;"></i>
+                 Items
+                 @*   <i class="fa fa-stack-exchange icon" style="font-size:30px;"></i>*@
                             </a>
              </li>
 
@@ -46,21 +47,22 @@
         <li class="nav-item2">
             
                 
-          <a class=" nav-link " asp-controller="User" asp-action="Items">
-                                <i class="fa fa-shopping-cart icon" style="font-size:30px;"></i>
+          <a class=" nav-link " asp-controller="Admin" asp-action="addproduct">
+              Add Product
+                               @* <i class="fa fa-shopping-cart icon" style="font-size:30px;"></i>*@
                             </a>
         </li>
         <li class="nav-item2">
            
-          <a class="nav-link " asp-controller="User" asp-action="Contact" >
+          <a class="nav-link " asp-controller="Admin" asp-action="Item" >
 
-                                <i class="fa fa-user-circle-o icon" style="font-size:30px;"></i>
+                              @*  <i class="fa fa-user-circle-o icon" style="font-size:30px;"></i>*@
                             </a>
         </li>
-         <li class="nav-item2 dropdown">
+        @* <li class="nav-item2 dropdown">
             
-          <a class="nav-link dropdown-toggle menuLi" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-cogs icon" style="font-size:30px;"></i>
+         <a class="nav-link dropdown-toggle menuLi" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+         <i class="fa fa-cogs icon" style="font-size:30px;"></i>
                             </a>
           <ul class="dropdown-menu menuU" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item"  asp-controller="User" asp-action="BreakFast_Lunch" >BREAKFAST & LUNCH</a></li>
@@ -69,7 +71,7 @@
             <li><a class="dropdown-item" asp-controller="User" asp-action="Items">CAKES</a></li>
           </ul>
         </li>
-       
+       *@
         
       </ul>
       

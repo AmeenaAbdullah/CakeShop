@@ -30,6 +30,7 @@
                                    <option value="Mango">Mango</option>
                                     <option value="Redvelvet">Red Velvet</option>
                     </select>
+                                <span asp-validation-for="Category" class="errors"></span>
                   </div>
                         <div class="form-group mb-3">
                             <label for="description">Description</label>
@@ -44,10 +45,12 @@
                                     <option value="3">3</option>
                                     <option value="4">4</option>
                                 </select>
+                                <span asp-validation-for="Pond" class="errors"></span>
                             </div>
                             <div class="form-group mb-3">
                                 <label for="price">Price</label>
                                 <input asp-for="Price" class="form-control validate" required=""></input>
+                                <span asp-validation-for="Price" class="errors"></span>
                             </div>
               
           </div>
@@ -61,7 +64,8 @@
                     </div>
                 <div class="custom-file mt-3 mb-3">
                    <input asp-for="Image"  type="file" name="postedFiles" id="fileInput"  >
-                     </div>
+                                <span asp-validation-for="Image" class="errors"></span>
+                            </div>
               </div>
               <div class="col-12">
                 <button type="submit" class="btn btnAdd btn-block text-uppercase">Add Product Now</button>

@@ -703,3 +703,25 @@ a:focus {
 .sqs-add-to-cart-button {
     width: max-content;
 }
+
+
+
+
+
+/**********************************
+     Admin Index
+    ******************************/
+
+
+.AdminIndex{
+    margin-top:100px;
+}
+.Adminbtn{
+    background-color:antiquewhite;
+    border-radius:5px;
+    padding:0px;
+
+}
+.Adminbtn:hover{
+    background-color:aqua;
+}

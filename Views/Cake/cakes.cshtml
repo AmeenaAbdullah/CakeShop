@@ -12,7 +12,7 @@
         <h5 class="card-title">@Model.Category</h5>
         <p class="card-text">Content.</p>
         <p class="text-muted">@Model.Price</p>
-        <a href="" class="btn btn-secondary " onclick="OrderNow">Order Now</a>
+        <a asp-route ="cakeDetailsRoute" asp-route-id="@Model.Id" class="btn btn-secondary " onclick="OrderNow">Order Now</a>
     </div>
 </div>
 

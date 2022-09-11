@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using CakesShop.Models.Interfaces;
 using System.Linq;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace CakesShop.Models.Repositories
 {
@@ -46,11 +47,10 @@ namespace CakesShop.Models.Repositories
         }
         public Boolean Delete(int id)
         {
-            CakesShopManagementSystemContext dbcont = new CakesShopManagementSystemContext();
-            Cake c= dbcont.Cakes.Find(id);
+            Cake c= dbcontext.Cakes.Find(id);
             if (c != null)
             {
-                dbcontext.Cakes.Remove(c);
+                dbcontext.Remove(c);
                 dbcontext.SaveChanges();
                 return true;
             }
@@ -69,6 +69,30 @@ namespace CakesShop.Models.Repositories
             }
             return cakes;
         }
+        
+        public Cake GetCakeById(int c)
+        {
+            Cake cakes = new Cake();
 
+           cakes = dbcontext.Cakes.Find(c);
+           
+            return cakes;
+        }
+        public void UpdateCake(Cake updatecake)
+        {
+          
+            if (updatecake != null)
+            {
+                Cake cake = dbcontext.Cakes.Where(c=>c.Id==updatecake.Id).FirstOrDefault();
+                 
+                cake.Description = updatecake.Description;
+                cake.Price = updatecake.Price;
+                cake.Pond = updatecake.Pond;
+                cake.Image = updatecake.Image;
+
+                dbcontext.Cakes.Update(cake);
+                dbcontext.SaveChanges();
+            }
+        }
     }
 }

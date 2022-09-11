@@ -40,9 +40,12 @@
             <p asp-for="Price"  class="text-muted">Rs @Model.Price -/</p>
 
             <p asp-for="Pond" class="text-muted">Rs @Model.Pond -/</p>
-        <a href="" class="btn Adminbtn" onclick="OrderNow">View Item</a>
-            <a href="" class="btn Adminbtn" id="btnDelete" onclick="DeleteCake()">Delete Item</a>
-        <a href="UpdateProduct.cshtml" class="btn Adminbtn"  onclick="OrderNow">Update Item</a>
+            
+            <a class="btn Adminbtn" asp-route="cakeDetailsRoute" asp-route-id="@Model.Id">View Item</a>
+
+            <a  class="btn Adminbtn" asp-route="cakeDeleteRoute" asp-route-id="@Model.Id">Delete Item</a>
+            
+            <a  class="btn Adminbtn" asp-route="cakeupdateroot" asp-route-id="@Model.Id">Update Item</a>
     </div>
 </div>
 </form>

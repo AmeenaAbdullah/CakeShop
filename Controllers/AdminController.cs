@@ -27,6 +27,7 @@ namespace CakesShop.Controllers
         {
             return View();
         }
+
         [HttpPost]
         public IActionResult AddProduct(Cake c, IFormFile postedFiles)
         {
@@ -55,20 +56,66 @@ namespace CakesShop.Controllers
         }
 
 
-        public IActionResult UpdateProduct()
+        [Route("cake-update/{id:int:min(1)}", Name = "cakeupdateroot")]
+        public async Task<ViewResult> UpdateProduct(int id)
         {
-            return View();
+            Cake data = _cakeRepo.GetCakeById(id);
+
+            return View(data);
         }
-        public IActionResult Product()
+
+        [Route("cake-updatepost/{id:int:min(1)}", Name = "cakeupdaterootpost")]
+        public IActionResult UpdateProduct(int id,Cake c,IFormFile postedFiles)
         {
-            return View();
+           
+            Cake data = _cakeRepo.GetCakeById(id);
+            data.Price = c.Price;
+            data.Category = c.Category;
+            data.Description = c.Description;
+            data.Pond = c.Pond;
+            if (postedFiles != null)
+            {
+                deleteUploadImge(id);
+                string wwwPath = this.Environment.WebRootPath;
+                string path = Path.Combine(wwwPath, "Uploads");
+                if (!Directory.Exists(path))
+                {
+                    Directory.CreateDirectory(path);
+                }
+                var fileName = Path.GetFileName(postedFiles.FileName);
+                var pathWithFileName = Path.Combine(path, fileName);
+                using (FileStream stream = new FileStream(pathWithFileName, FileMode.Create))
+                {
+                    postedFiles.CopyTo(stream);
+                    ViewBag.Message = "file uploaded successfully";
+                }
+
+
+                string imgpath = "/Uploads/" + postedFiles.FileName;
+                data.Image = imgpath;
+            }
+           
+
+            _cakeRepo.UpdateCake(data);
+
+            return View("Index");
         }
+
+
+
+
 
         public IActionResult Addimg()
         {
             return View();
         }
+        
+        
+        
+        
         [HttpPost]
+        
+        
         public IActionResult Addimg(List<IFormFile> postedFiles)
         {
             string wwwPath = this.Environment.WebRootPath;
@@ -90,6 +137,16 @@ namespace CakesShop.Controllers
                 }
             }
             return View();
+        }
+        public void deleteUploadImge(int id)
+        {
+            Cake data = _cakeRepo.GetCakeById(id);
+            string wwwPath = this.Environment.WebRootPath;
+
+            string path = Path.Combine(wwwPath, "Uploads");
+            string img = data.Image;
+            var pathWithFileName = Path.Combine(path, img);
+            System.IO.File.Delete(pathWithFileName);
         }
     }
 }

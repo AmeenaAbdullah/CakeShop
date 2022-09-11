@@ -9,7 +9,9 @@ namespace CakesShop.Models.Interfaces
         public List<Cake> GetTopCakes();
         public bool Delete(int id);
         public List<Cake> GetCakesByCategory(string c);
-      
+        public Cake GetCakeById(int c);
+        public void UpdateCake(Cake C);
+
        //public List<Cake> GetCakesByCategory(string c, string SearchValue);
 
 

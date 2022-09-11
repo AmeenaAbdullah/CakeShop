@@ -1,64 +1,78 @@
-﻿
+﻿@using CakesShop.Models.Interfaces;
+@model Cake;
 @{
     Layout = "~/Views/Shared/_adminLayout.cshtml";
 }
 <div class="Addrow">
+    <div class="">
         <div class="">
-          <div class="">
             <div class="">
-              <div class="">
-                <h2 class="AddProducthead">Update Product</h2>
-              </div>
+                <div class="">
+                    <h2 class="AddProducthead">Update Product</h2>
+                </div>
             </div>
             <div class="row ">
-              <div class="col-xl-6 col-lg-6 col-md-12">
-                <form action="" class="">
-                  <div class="form-group ">
-                    <label for="name">Product Name
-                    </label>
-                    <input id="name" name="name" type="text" class="form-control validate" required="">
-                  </div>
-                  <div class="form-group mb-3">
-                    <label for="description">Description</label>
-                    <textarea class="form-control validate" rows="3" required=""></textarea>
-                  </div>
-                  <div class="form-group mb-3">
-                    <label for="category">Category</label>
-                    <select class="custom-select tm-select-accounts" id="category">
-                      <option selected="">Select category</option>
-                      <option value="1">New Arrival</option>
-                      <option value="2">Most Popular</option>
-                      <option value="3">Trending</option>
-                    </select>
-                  </div>
-                  <div class="row">
-                      <div class="form-group mb-3 col-xs-12 col-sm-6">
-                          <label for="expire_date">Expire Date
-                          </label>
-                          <input id="expire_date" name="expire_date" type="text" class="form-control validate hasDatepicker" data-large-mode="true">
+                <form enctype="multipart/form-data" asp-route="cakeupdaterootpost" asp-route-id="@Model.Id">
+                    <div class="col-xl-6 col-lg-6 col-md-12">
+
+                        <div class="form-group ">
+
+                            <div class="form-group mb-3">
+                                <label for="Image">Product</label>
+                                <img asp-for="Image" src="@Model.Image" class="card-img-top" alt="..." width="310" height="300">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="category">Category</label>
+                                <select asp-for="Category" class="custom-select tm-select-accounts" id="category">
+                                    <option selected="">Select category</option>
+                                    <option value="Chocolate">Chocolate Cake</option>
+                                    <option value="Strawberry">Strawberry Cake</option>
+                                    <option value="Vanilla">Vanilla</option>
+                                    <option value="Mango">Mango</option>
+                                    <option value="Redvelvet">Red Velvet</option>
+                                </select>
+                                <span asp-validation-for="Category" class="errors"></span>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="description">Description</label>
+                                <textarea asp-for="Description" class="form-control validate" rows="3" required=""></textarea>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="pond">Ponds</label>
+                                <select asp-for="Pond" class="custom-select tm-select-accounts" id="category">
+                                    <option selected="">Select pond</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                                <span asp-validation-for="Pond" class="errors"></span>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="price">Price</label>
+                                <input asp-for="Price" class="form-control validate" required=""></input>
+                                <span asp-validation-for="Price" class="errors"></span>
+                            </div>
+
                         </div>
-                        <div class="form-group mb-3 col-xs-12 col-sm-6">
-                          <label for="stock">Units In Stock
-                          </label>
-                          <input id="stock" name="stock" type="text" class="form-control validate" required="">
+                        <div class="form-group mb-3">
+                            <label>Add Product Image </label>
                         </div>
-                  </div>
-                  
-              </form></div>
-              <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
-                <div class="tm-product-img-dummy mx-auto">
-                <i class="fa fa-cloud-upload" style="font-size:30px;" onclick="document.getElementById('fileInput').click();"></i>
-                    </div>
-                <div class="custom-file mt-3 mb-3">
-                  <input id="fileInput" type="file" style="display:none;">
-                  <input type="button" class="btn btnAdd btn-block mx-auto" value="UPLOAD PRODUCT IMAGE" onclick="document.getElementById('fileInput').click();">
-                </div>
-              </div>
-              <div class="col-12">
-               <button type="submit" class="btn btnAdd btn-block text-uppercase">Update</button>
-              </div>
-            
+                        <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
+                            <div class="tm-product-img-dummy mx-auto">
+
+                                <i class="fa fa-cloud-upload" style="font-size:30px;" onclick="document.getElementById('fileInput').click();"></i>
+                            </div>
+                            <div class="custom-file mt-3 mb-3">
+                                <input type="file" name="postedFiles" id="fileInput">
+                                <span  class="errors"></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btnAdd btn-block text-uppercase" >Update Product Now</button>
+                        </div>
+                </form>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+</div>

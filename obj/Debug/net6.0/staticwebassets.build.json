@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0qdnQsAMMHVMXnrrhS/rCVAhsaCusywZ/RV8y+znJDI=",
+  "Hash": "YsFgGekIRRDGPYOoN0/Ex3LJXtDanW/W5WoyvEF18oE=",
   "Source": "CakesShop",
   "BasePath": "_content/CakesShop",
   "Mode": "Default",
@@ -1664,23 +1664,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\cake18.jpg"
-    },
-    {
-      "Identity": "D:\\se\\semester6\\EAD\\New folder\\CakeShop\\wwwroot\\Uploads\\cake2.jpg",
-      "SourceId": "CakesShop",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\se\\semester6\\EAD\\New folder\\CakeShop\\wwwroot\\",
-      "BasePath": "_content/CakesShop",
-      "RelativePath": "Uploads/cake2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\cake2.jpg"
     },
     {
       "Identity": "D:\\se\\semester6\\EAD\\New folder\\CakeShop\\wwwroot\\Uploads\\cake3.jpg",

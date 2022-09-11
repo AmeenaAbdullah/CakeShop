@@ -5,14 +5,17 @@ using System;
 
 namespace CakesShop.Controllers
 {
+
     public class CakeController : Controller
     {
 
         private readonly ICake _cakeRepo;
-        public CakeController(ICake c)
+        private readonly IWebHostEnvironment Environment;
+        public CakeController(ICake c, IWebHostEnvironment e)
         {
 
             _cakeRepo = c;
+            Environment = e;
         }
       
 
@@ -26,16 +29,17 @@ namespace CakesShop.Controllers
         {
             return View();
         }
-
-        [HttpPost]
-        public IActionResult DeleteCake([FromBody] int id)
+        
+      [Route("cake-delete/{id:int:min(1)}", Name = "cakeDeleteRoute")]
+        public IActionResult DeleteCake(int id)
         {
-          
-            Boolean i=_cakeRepo.Delete(id);
+            //Delete Upload folder
+              deleteUploadImge(id);
+              Boolean i=_cakeRepo.Delete(id);
             if(i)
-            return this.Ok($"Form Data received!");
+            return this.RedirectToAction("Index","Admin");
 
-            return this.Ok($"Form Data received!");
+            return this.Ok($"Not Found!");
         }
         [HttpGet]
         public IActionResult Search()
@@ -57,6 +61,10 @@ namespace CakesShop.Controllers
             
             return Json(cake.ToList());
         }
+
+
+
+
         public IActionResult CakesViewComponent(String searcval)
         {
             List<Cake> cake = new List<Cake>();
@@ -65,5 +73,25 @@ namespace CakesShop.Controllers
 
             return ViewComponent("Cakes", new { allitems = false ,view = searcval });
         }
+
+
+        [Route("cake-details/{id:int:min(1)}", Name = "cakeDetailsRoute")]
+        public async Task<ViewResult> GetCake(int id)
+        {
+            Cake data = _cakeRepo.GetCakeById(id);
+
+            return View(data);
+        }
+        public void deleteUploadImge(int id)
+        {
+            Cake data = _cakeRepo.GetCakeById(id);
+            string wwwPath = this.Environment.WebRootPath;
+
+            string path = Path.Combine(wwwPath, "Uploads");
+            var fileName = Path.GetFileName(data.Image);
+            var pathWithFileName = Path.Combine(path, fileName);
+            System.IO.File.Delete(pathWithFileName);
+        }
+
     }
 }

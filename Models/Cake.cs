@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CakesShop.Models
 {
-    public partial class Cake
+    public partial class Cake : FullAuditModel
     {
         public int Id { get; set; }
         [Required(ErrorMessage = "Please enter Category")]

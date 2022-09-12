@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CakesShop.Models
 {
-    public partial class User
+    public partial class User : FullAuditModel
     {
         public int Id { get; set; }
         [Required(ErrorMessage = "Please enter name")]

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using CakesShop.Models.Interfaces;
 using System.Reflection.Metadata;
 using System;
+using AutoMapper;
 
 namespace CakesShop.Controllers
 {
@@ -10,10 +11,12 @@ namespace CakesShop.Controllers
     {
 
         private readonly IUser _userRepo;
-        public UserController(IUser _user)
+        private readonly IMapper _mapper;
+        public UserController(IUser _user, IMapper mapper)
         {
 
             _userRepo = _user;
+            _mapper = mapper;
         }
         [HttpGet]
         public IActionResult Signup()
@@ -43,12 +46,31 @@ namespace CakesShop.Controllers
         [HttpPost]
         public IActionResult Login(User u)
         {
+            string data = String.Empty;
+            if (HttpContext.Session.Keys.Contains("SessionCreate"))
+            {
+                string firsttime = HttpContext.Session.GetString("SessionCreate");
+                data = "welcome back" + firsttime;
+            }
+            else
+            {
+                data = "You visit first time";
+                HttpContext.Session.SetString("SessionCreate", System.DateTime.Now.ToString());
+            }
+
             bool i= _userRepo.UserExist(u);
             if (i)
                 return View("Home");
             else
                 return View();
 
+        }
+
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("SessionCreate");
+            return View("Home");
         }
         [HttpGet]
         public IActionResult Home()

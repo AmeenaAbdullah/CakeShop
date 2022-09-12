@@ -1,5 +1,7 @@
-﻿using CakesShop.Models;
+﻿using AutoMapper;
+using CakesShop.Models;
 using CakesShop.Models.Interfaces;
+using CakesShop.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
@@ -11,26 +13,23 @@ namespace CakesShop.Controllers
 
         private readonly ICake _cakeRepo;
         private readonly IWebHostEnvironment Environment;
-        public CakeController(ICake c, IWebHostEnvironment e)
+        private readonly IMapper mapper;
+        public CakeController(ICake c, IWebHostEnvironment e,IMapper m)
         {
-
             _cakeRepo = c;
             Environment = e;
+            mapper = m;
         }
-      
-
         public PartialViewResult getCakes() {
             List<Cake> cakes = _cakeRepo.GetAllCakes();
-            
             return PartialView("_getAllCakes",cakes);
         }
-
         public IActionResult PlaceHolder()
         {
             return View();
         }
         
-      [Route("cake-delete/{id:int:min(1)}", Name = "cakeDeleteRoute")]
+         [Route("cake-delete/{id:int:min(1)}", Name = "cakeDeleteRoute")]
         public IActionResult DeleteCake(int id)
         {
             //Delete Upload folder
@@ -47,40 +46,33 @@ namespace CakesShop.Controllers
 
             return View(_cakeRepo.GetAllCakes());
         }
-
         [HttpPost]
-
         public JsonResult GetSearchData(String fullName)
         {
 
 
-            List<Cake> cake = new List<Cake>();
-
-            
+            List<Cake> cake = new List<Cake>();    
             cake = _cakeRepo.GetCakesByCategory(fullName);
-            
             return Json(cake.ToList());
         }
-
-
-
-
         public IActionResult CakesViewComponent(String searcval)
         {
-            List<Cake> cake = new List<Cake>();
 
-            cake = _cakeRepo.GetCakesByCategory(searcval);
+            List<Cake> cake = new List<Cake>();
+            if (searcval != null)
+                cake = _cakeRepo.GetCakesByCategory(searcval);
+            else
+                cake = _cakeRepo.GetAllCakes();
 
             return ViewComponent("Cakes", new { allitems = false ,view = searcval });
         }
-
-
+       
         [Route("cake-details/{id:int:min(1)}", Name = "cakeDetailsRoute")]
         public async Task<ViewResult> GetCake(int id)
         {
             Cake data = _cakeRepo.GetCakeById(id);
-
-            return View(data);
+            CakeViewModel cakes= mapper.Map<CakeViewModel>(data);
+            return View(cakes);
         }
         public void deleteUploadImge(int id)
         {

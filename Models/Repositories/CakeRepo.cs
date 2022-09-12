@@ -61,13 +61,20 @@ namespace CakesShop.Models.Repositories
 
         public List<Cake> GetCakesByCategory(string c)
         {
-            List<Cake> cakes = new List<Cake>();
-            c = c.ToLower();
-            if (!String.IsNullOrEmpty(c))
+            
+            if (c!=null)
             {
-                cakes = dbcontext.Cakes.Where(s => s.Category.ToLower().Contains(c)).ToList(); 
+                List<Cake> cakes = new List<Cake>();
+                c = c.ToLower();
+                cakes = dbcontext.Cakes.Where(s => s.Category.ToLower().Contains(c)).ToList();
+                return cakes;
             }
-            return cakes;
+            else
+            {
+                List<Cake> cakes = new List<Cake>();
+                cakes = GetAllCakes();
+                return cakes;
+            }
         }
         
         public Cake GetCakeById(int c)

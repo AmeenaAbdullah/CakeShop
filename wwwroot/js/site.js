@@ -70,14 +70,14 @@ function getCakesByValue() {
         data: payload2,
 
         success: function (cakes) {
-            alert('Successfully received Data ');
+        
             console.log(cakes);
             container.html(cakes);
 
         }
         ,
         error: function () {
-            alert('Failed to receive the Data');
+          
             console.log('Failed ');
         }
     }); 

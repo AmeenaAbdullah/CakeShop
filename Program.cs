@@ -12,6 +12,7 @@ builder.Services.AddMemoryCache();
 builder.Services.AddSession(o => o.IdleTimeout=TimeSpan.FromSeconds(10));
 builder.Services.AddSingleton<IUser, UserRepo>();
 builder.Services.AddSingleton<ICake, CakeRepo>();
+builder.Services.AddAutoMapper(typeof(Program));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

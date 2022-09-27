@@ -51,6 +51,23 @@ namespace CakesShop.Models
 
                     }
                 }
+                else if (entity.Entity is FullAudit_User)
+                {
+                    var refEntity = entity.Entity as FullAudit_User;
+                    switch (entity.State)
+                    {
+                        case EntityState.Deleted:
+                        case EntityState.Added:
+                            refEntity.CreatedDate = DateTime.Now;
+                            break;
+                        case EntityState.Modified:
+                            refEntity.LastModifiedDate = DateTime.Now;
+                            break;
+                        default:
+                            break;
+
+                    }
+                }
 
 
             }

@@ -75,6 +75,9 @@ namespace CakesShop.Controllers
             CakeViewModel cakes= mapper.Map<CakeViewModel>(data);
             return View(cakes);
         }
+
+
+
         public void deleteUploadImge(int id)
         {
             Cake data = _cakeRepo.GetCakeById(id);

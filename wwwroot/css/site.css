@@ -726,13 +726,21 @@ a:focus {
     background-color:aqua;
 }
 
-
-
+/********************************
+    Add Product
+********************************/
+.rowcrud{
+   border:1px solid black;
+   align-items:center;
+   padding-left:25%;
+}
+.crudform {
+}
 /************************Items (User)*************************/
-#SearchCakes{
-    border-radius:0;
-    width:auto;
-    margin-left:100px;
+#SearchCakes {
+    border-radius: 0;
+    width: auto;
+    margin-left: 100px;
 }
 #SearchBy {
     border-radius: 0;

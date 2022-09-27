@@ -4,11 +4,11 @@
 @{
 }
 @model Cake
+
 <script type="text/javascript">
     function DeleteCake() {
         var Cake = 0;
-        Cake = $("#CakeId").val();
-       
+        Cake = $("#CakeId").val(); 
         console.log("hiii:" + Cake);
         alert("HIII"+  @Model.Id);
         $.ajax({
@@ -27,7 +27,6 @@
     }
 
 </script>
-
 
 
 <form id="card">

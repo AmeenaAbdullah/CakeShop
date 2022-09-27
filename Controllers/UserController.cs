@@ -27,7 +27,7 @@ namespace CakesShop.Controllers
         [HttpPost]
         public IActionResult Signup( User u)
         {
-            if (ModelState.IsValid) { 
+            if (u.Password!=null && u.Name!=null) { 
                
 
             _userRepo.Add_User(u);

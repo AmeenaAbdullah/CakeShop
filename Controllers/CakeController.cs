@@ -68,9 +68,10 @@ namespace CakesShop.Controllers
         }
        
         [Route("cake-details/{id:int:min(1)}", Name = "cakeDetailsRoute")]
-        public async Task<ViewResult> GetCake(int id)
+        public async Task<ViewResult> GetCake(int id) 
         {
             Cake data = _cakeRepo.GetCakeById(id);
+
             CakeViewModel cakes= mapper.Map<CakeViewModel>(data);
             return View(cakes);
         }

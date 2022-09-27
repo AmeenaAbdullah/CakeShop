@@ -27,6 +27,35 @@ namespace CakesShop.Models
                 optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Initial Catalog=CakesShopManagementSystem;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             }
         }
+        public override int SaveChanges()
+        {
+            var tracker = ChangeTracker;
+            foreach(var entity in tracker.Entries())
+            {
+                if(entity.Entity is FullAuditModel)
+                {
+                    var refEntity = entity.Entity as FullAuditModel;
+                    switch(entity.State)
+                    {
+                        case EntityState.Deleted:
+                         case EntityState.Added:
+                            refEntity.CreatedDate = DateTime.Now;
+                            refEntity.CreatedByUserId = "1";
+                         break;
+                        case EntityState.Modified:
+                            refEntity.LastModifiedUserId = "1";
+                            refEntity.LastModifiedDate = DateTime.Now;
+                            break;
+                        default:
+                            break;
+
+                    }
+                }
+
+
+            }
+            return base.SaveChanges();
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
